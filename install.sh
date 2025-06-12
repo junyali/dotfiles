@@ -45,7 +45,7 @@ fi
 
 read -n1 -rep "would you like to copy config files (WARNING: WILL OVERWRITE EXISTING FILES)? (y/n)" CPC
 if [[ $CPC == "Y" || $CPC == "y" ]]; then
-  cp -R ./config/kitty ~/.config/
-  cp ./config/zsh/.zshrc ~/
+  cp -R .config/kitty ~/.config/
+  cp .config/zsh/.zshrc ~/
 fi
 
