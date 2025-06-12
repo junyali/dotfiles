@@ -41,6 +41,22 @@ read -n1 -rep "would you like to install the minegrub theme? (y/n)" MGT
 if [[ $MGT == "Y" || $MGT == "y" ]]; then
   git clone https://github.com/Lxtharia/minegrub-theme.git /tmp/minegrub-theme
   cd /tmp/minegrub-theme && sudo ./install_theme.sh
+
+  echo "you may safely ignore the above message; it has been done already for you :)"
+
+  if grep -q "^GRUB_THEME=" /etc/default/grub; then
+    sudo sed -i 's|^GRUB_THEME=.*|GRUB_THEME=/boot/grub/themes/minegrub/theme.txt|' /etc/default/grub
+  else
+    echo 'GRUB_THEME=/boot/grub/themes/minegrub/theme.txt' | sudo tee -a /etc/default/grub
+  fi
+
+  if grep -q "^GRUB_BACKGROUND=" /etc/default/grub; then
+    sudo sed -i 's|^GRUB_BACKGROUND=.*|GRUB_BACKGROUND=/boot/grub/themes/minegrub/dirt.png|' /etc/default/grub
+  else
+    echo 'GRUB_BACKGROUND=/boot/grub/themes/minegrub/dirt.png' | sudo tee -a /etc/default/grub
+  fi
+
+  sudo grub-mkconfig -o /boot/grub/grub.cfg
 fi
 
 read -n1 -rep "would you like to copy config files (WARNING: WILL OVERWRITE EXISTING FILES)? (y/n)" CPC
