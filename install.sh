@@ -3,7 +3,7 @@
 echo "junyali's dotfiles - hang tight..."
 
 ISARCH=/etc/arch-release
-if not [ -f "$ISARCH" ]; then
+if [ ! -f "$ISARCH" ]; then
   echo -e "junyali's dotfiles is only available for arch releases :(\n"
   exit
 fi
