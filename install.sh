@@ -21,9 +21,16 @@ else
   echo -e "yay not found. please install yay first.\n"
 fi
 
-read -n1 -rep "wuld you like to install required packages? (y/n)" INST
+read -n1 -rep "would you like to install required packages? (y/n)" INST
 if [[ $INST == "Y" || $INST == "y" ]]; then
   # yay installation goes here basically :p (oh boy its gunna be long)
 
   echo "packages have been installed"
 fi
+
+read -n1 -rep "would you like to install the minegrub theme? (y/n)" MGT
+if [[ $MGT == "Y" || $MGT == "y" ]]; then
+  git clone https://github.com/Lxtharia/minegrub-theme.git /tmp/minegrub-theme
+  cd /tmp/minegrub-theme && sudo ./install_theme.sh
+fi
+
