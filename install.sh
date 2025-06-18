@@ -16,7 +16,6 @@ fi
 HASYAY=/sbin/yay
 if [ -f "$HASYAY" ]; then
   echo -e "yay found. continuing...\n"
-  yay
 else
   echo -e "yay not found. please install yay first.\n"
 fi
@@ -24,7 +23,8 @@ fi
 read -n1 -rep "would you like to install required packages? (y/n)" INST
 if [[ $INST == "Y" || $INST == "y" ]]; then
   # yay installation goes here basically :p (oh boy its gunna be long)
-  yay -S --noconfirm zsh neofetch kitty ttf-jetbrains-mono-nerd
+  yay -S --noconfirm zsh fastfetch kitty ttf-jetbrains-mono-nerd
+
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
   git clone https://gitlab.com/phoneybadger/pokemon-colorscripts.git /tmp/pokemon-colorscripts
