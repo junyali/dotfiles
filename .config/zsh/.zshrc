@@ -7,3 +7,5 @@ plugins=(
 )
 
 pokemon-colorscripts -r
+
+source $ZSH~/.oh-my-zsh/oh-my-zsh.sh
