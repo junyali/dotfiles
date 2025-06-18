@@ -47,5 +47,6 @@ read -n1 -rep "would you like to copy config files (WARNING: WILL OVERWRITE EXIS
 if [[ $CPC == "Y" || $CPC == "y" ]]; then
   ln -srf ./.config/kitty ~/.config/kitty
   ln -srf ./.config/zsh/.zshrc ~/.zshrc
+  ln -srf ./.config/zsh/.p10k.zsh ~/.p10k.zsh
 fi
 
