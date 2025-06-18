@@ -23,12 +23,9 @@ fi
 read -n1 -rep "would you like to install required packages? (y/n)" INST
 if [[ $INST == "Y" || $INST == "y" ]]; then
   # yay installation goes here basically :p (oh boy its gunna be long)
-  yay -S --noconfirm zsh fastfetch kitty ttf-jetbrains-mono-nerd
+  yay -S --noconfirm zsh fastfetch kitty ttf-jetbrains-mono-nerd pokemon-colorscripts-git
 
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-
-  git clone https://gitlab.com/phoneybadger/pokemon-colorscripts.git /tmp/pokemon-colorscripts
-  cd /tmp/pokemon-colorscripts && sudo ./install.sh
 
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions

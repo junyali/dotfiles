@@ -11,6 +11,8 @@ plugins=(
     zsh-syntax-highlighting
 )
 
+pokemon-colorscripts -r
+
 source ~/.oh-my-zsh/oh-my-zsh.sh
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
