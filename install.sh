@@ -23,7 +23,7 @@ fi
 read -n1 -rep "would you like to install required packages? (y/n)" INST
 if [[ $INST == "Y" || $INST == "y" ]]; then
   # yay installation goes here basically :p (oh boy its gunna be long)
-  yay -S --noconfirm zsh fastfetch kitty ttf-jetbrains-mono-nerd pokemon-colorscripts-git
+  yay -S --noconfirm zsh fastfetch kitty ttf-jetbrains-mono-nerd pokemon-colorscripts-git hyprpaper
 
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
@@ -45,5 +45,7 @@ if [[ $CPC == "Y" || $CPC == "y" ]]; then
   ln -srf ./.config/kitty ~/.config/kitty
   ln -srf ./.config/zsh/.zshrc ~/.zshrc
   ln -srf ./.config/zsh/.p10k.zsh ~/.p10k.zsh
+  ln -srf ./.config/hypr ~/.config/hypr
+  ln -srf ./wallpapers ~/Pictures/hyprland-wallpapers
 fi
 
