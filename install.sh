@@ -42,10 +42,10 @@ fi
 
 read -n1 -rep "would you like to copy config files (WARNING: WILL OVERWRITE EXISTING FILES)? (y/n)" CPC
 if [[ $CPC == "Y" || $CPC == "y" ]]; then
-  ln -srf ./.config/kitty ~/.config/kitty
+  ln -srf ./.config/kitty ~/.config
   ln -srf ./.config/zsh/.zshrc ~/.zshrc
   ln -srf ./.config/zsh/.p10k.zsh ~/.p10k.zsh
-  ln -srf ./.config/hypr ~/.config/hypr
+  ln -srf ./.config/hypr ~/.config
   ln -srf ./wallpapers ~/Pictures/hyprland-wallpapers
 fi
 
