@@ -15,10 +15,10 @@
     "power-profiles-daemon",
     "memory",
     "temperature",
-    "bacjlight",
+    "backlight",
     "keyboard-state",
     "battery",
-    "batter#bat2",
+    "battery#bat2",
     "clock",
     "tray"
   ],
