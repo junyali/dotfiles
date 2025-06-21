@@ -46,6 +46,7 @@ if [[ $CPC == "Y" || $CPC == "y" ]]; then
   ln -srf ./.config/zsh/.zshrc ~/.zshrc
   ln -srf ./.config/zsh/.p10k.zsh ~/.p10k.zsh
   ln -srf ./.config/hypr ~/.config
+  ln -srf ./.config/waybar ~/.config
   ln -srf ./wallpapers ~/Pictures/hyprland-wallpapers
 fi
 
