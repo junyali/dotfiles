@@ -29,12 +29,12 @@ tooltip {
 }
 
 #workspaces button {
-    margin: 3px 2px;
+    margin: 0 2px;
     padding: 4px 8px;
     min-width: 20px;
     color: #b8a7d9;
     background-color: rgba(75, 54, 124, 0.3);
-    border-radius: 8px;
+    border-radius: 16px;
     border: 1px solid transparent;
 }
 
