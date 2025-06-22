@@ -61,6 +61,20 @@ tooltip {
     color: #ff6b6b;
 }
 
+#window {
+    margin: 4px 8px;
+    padding: 4px 12px;
+    border-radius: 16px;
+    background: linear-gradient(45deg, rgba(45, 47, 90, 0.4), rgba(75, 54, 124, 0.3));
+    color: #e8e3ff;
+    font-weight: bold;
+}
+
+#window.empty {
+    background: transparent;
+    color: #6b5b95;
+}
+
 #tray {
     margin: 3px;
     padding: 2px 8px;

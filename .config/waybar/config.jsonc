@@ -6,7 +6,7 @@
     "cpu"
   ],
   "modules-center": [
-
+    "hyprland/window"
   ],
   "modules-right": [
     "idle_inhibitor",
@@ -20,6 +20,11 @@
     "clock",
     "tray"
   ],
+  "hyprland/window": {
+    "format": "{title}",
+    "max-length": 64,
+    "separate-outputs": true
+  },
   "keyboard-state": {
     "numlock": true,
     "capslock": true,
