@@ -31,6 +31,8 @@ if [[ $INST == "Y" || $INST == "y" ]]; then
   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
+  chsh --shell=/usr/bin/zsh $USER
+
   echo "packages have been installed"
 fi
 
@@ -52,3 +54,5 @@ if [[ $CPC == "Y" || $CPC == "y" ]]; then
   ln -srf ./wallpapers ~/Pictures/hyprland-wallpapers
 fi
 
+echo "installation complete! thanks for using my dotfiles :3"
+echo "don't forget to run hyprland!!"
