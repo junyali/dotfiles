@@ -53,11 +53,13 @@
     "format": "{}% \uF0C9"
   },
   "temperature": {
+    "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
     "critical-threshold": 80,
     "format": "{temperature}°C {icon}",
     "format-icons": ["", "", ""]
   },
   "backlight": {
+    "device": "intel_backlight",
     "format": "{percentage}% {icon}",
     "format-icons": ["", "", "", "", "", "", "", "", ""]
   },
