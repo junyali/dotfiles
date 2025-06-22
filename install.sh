@@ -23,7 +23,7 @@ fi
 read -n1 -rep "would you like to install required packages? (y/n)" INST
 if [[ $INST == "Y" || $INST == "y" ]]; then
   # yay installation goes here basically :p (oh boy its gunna be long)
-  yay -S --noconfirm zsh fastfetch kitty ttf-jetbrains-mono-nerd pokemon-colorscripts-git hyprpaper
+  yay -S --noconfirm zsh fastfetch kitty ttf-jetbrains-mono-nerd pokemon-colorscripts-git hyprpaper ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono
 
   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
