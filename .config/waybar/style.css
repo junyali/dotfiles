@@ -8,11 +8,15 @@
 #waybar {
     margin-top: 14px;
     border-radius: 12px;
-    border: 2px solid;
+    border: 2px solid #8b5fbf;
+    background-color: rgba(20, 16, 36, 0.95);
 }
 
 tooltip {
     border-radius: 10px;
+    background-color: #2a1f47;
+    color: #e8e3ff;
+    border: 1px solid #8b5fbf;
 }
 
 #workspaces {
@@ -26,32 +30,42 @@ tooltip {
 }
 
 #workspaces button:hover {
-    border: 1px solid;
+    border: 1px solid #d4a574;
+    background-color: rgba(212, 165, 116, 0.2);
+    color: #e8e3ff;
 }
 
 #workspaces button.active {
-    border: 1px solid
+    border: 1px solid #c77dff;
+    background-color: rgba(199, 125, 255, 0.3);
+    color: #ffffff;
 }
 
 #workspaces button.empty {
     border-radius: 0px;
+    background-color: transparent;
+    color: #6b5b95;
 }
 
 #workspaces button.urgent * {
-
+    background-color: rgba(255, 107, 107, 0.4);
+    color: #ff6b6b;
 }
 
 #tray {
     margin: 3px 2px;
-    border-radius: 12px
+    border-radius: 12px;
+    background-color: rgba(75, 54, 124, 0.4);
 }
 
 #tray menu {
-
+    background-color: #2a1f47;
+    border: 1px solid #8b5fbf;
 }
 
 #tray * {
     padding: 0 6px;
+    color: #e8e3ff;
 }
 
 #battery,
@@ -65,8 +79,32 @@ tooltip {
     border-radius: 20px;
     min-width: 10px;
     background-color: transparent;
+    color: #e8e3ff;
+}
+
+#battery {
+    background: linear-gradient(45deg, rgba(139, 95, 191, 0.4), rgba(199, 155, 255, 0.3));
+}
+
+#cpu {
+    background: linear-gradient(45deg, rgba(212, 165, 116, 0.4), rgba(255, 154, 108, 0.3));
+}
+
+#network {
+    background: linear-gradient(45deg, rgba(75, 54, 124, 0.4), rgba(139, 95, 191, 0.3));
+}
+
+#pulseaudio {
+    background: linear-gradient(45deg, rgba(255, 14, 108, 0.4), rgba(212, 165, 116, 0.3));
+}
+
+#backlight {
+    background: linear-gradient(45deg, rgba(255, 154, 108, 0.4), rgba(255, 183, 77, 0.3));
 }
 
 #clock {
     margin: 4px 2px;
+    background: linear-gradient(45deg, rgba(139, 95, 191, 0.5), rgba(199, 125, 255, 0.4));
+    font-weight: bold;
+    border: 1px solid rgba(199, 125, 255, 0.6);
 }
