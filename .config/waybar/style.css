@@ -82,10 +82,8 @@ tooltip {
 #cpu,
 #network,
 #pulseaudio,
-#backlight,
 #clock,
 #memory,
-#temperature,
 #idle_inhibitor,
 #keyboard-state,
 #power-profiles-daemon {
